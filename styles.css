@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
+body {
+    overflow-x: hidden;
+}
+.navbar {
+    display: inline-block;
+    width: 10rem;
+}
+.navbarbtn {
+    display: block;
+    color: white;
+    text-align: center;
+    padding-bottom: 2rem ;
+    padding-top: 2rem;
+    text-decoration: none;
+    font-family: Lobster;
+    font-size: 20px;
+  }
+.navbar a:hover {
+    background-color: #be0d75;
+  }
+#navbar {
+    background-color: #f0018c;
+    margin: -1em;
+}
+#about {
+    background: linear-gradient(to bottom left, black, #303841);
+    padding-bottom: 10%;
+    padding-top: 10%;
+    margin: -1em;
+}
+#about > h1 {
+    color: beige;
+    text-align: center;
+    font-family: Oswald;
+    font-size: 4em;
+    padding-top: 1em;
+}
+#about > h2 {
+    color: #f0018c;
+    text-align: center;
+    font-family: Pacifico;
+    font-size: 2em;
+    padding-top: 0em;
+}
+#music {
+    background-color:  rgb(255, 160, 219);
+    height: 150px;
+    padding-top: 1%;
+    padding-left: 4%;
+    margin: -1em;
+}
+#music > h3 {
+    font-family: Rubik;
+    color: beige;
+}
+#work{
+    background: linear-gradient(135deg,#CCFFFF ,#FFCCCC);
+    text-align: center;
+    padding-bottom: 5%;
+    padding-top: 5%;
+    margin: -1em;
+}
+#resume {
+  margin: -1em;
+}
+#work > h2 {
+    color: rgb(255, 160, 219);
+    text-align: center;
+    padding-bottom: 4rem ;
+    font-family: Lobster;
+    font-size: 40px;
+    text-shadow: 2px 2px #ff0000;
+}
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      grid-gap: 3rem;
+      width: 100%;
+      max-width: 1280px;
+      margin: 0 auto;
+      margin-bottom: 6rem;
+    position: block;
+  }
+  .project-image {
+   display: block;
+   height: calc(100% - 6.8rem);
+  width: 100%;
+  height: 20em;
+  margin-bottom: -1em;
+  }
+  .project-title {
+    font-size: 1.3rem;
+    padding: 2rem;
+    background-color: #303841;
+    position: block;
+    margin: 0;
+    color: white;
+  }
+  .button {
+    font-size: 16px;
+    background-color: #303841;
+    color: white;
+    padding: 10px;
+    border-radius: 40px;
+    padding: 15px 32px;
+   }
+   .button:hover {
+    background-color: #f0018c ; 
+    cursor: pointer;
+   }
+   #contact {
+       background-color: rgb(255, 160, 219);
+       border-top: 4px solid #f0018c;
+       color: beige;
+       display: flex;
+       flex-direction: column;
+       text-align: center;  
+       margin: -1em;
+   }
+   #contact > h1 {
+    padding-bottom: 4rem ;
+    font-family: Lobster;
+    font-size: 40px;
+    text-shadow: 2px 2px #f0018c;
+   }
+   .profilink {
+    display: inline-block; 
+    padding-bottom: 3rem;
+    padding-right: 1rem;
+    font-family: Rubik;
+    Font-weight: 1000;
+  }
+  .profile-link {
+      font-size: 1.5rem;  
+      text-shadow: 2px 2px 1px #f0018c;
+      color: white;
+      text-decoration: none;
+      padding: 0.57em; 
+  }
+  .profile-icon {
+      width: 1.5rem;
+      filter: drop-shadow(1px 1px 0px #f0018c)
+  }
+  #survey {
+    background: linear-gradient(to bottom left, black, #303841);
+    color: aliceblue;  
+    font-family: Rubik; 
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: -1em;
+  }
+  .container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+  }
+  .container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
+  .checkmark {
+    position: absolute;
+    left: 31em;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border-radius: 50%;
+  }
+  .container:hover input ~ .checkmark {
+    background-color: #ccc;
+  }
+  .container input:checked ~ .checkmark {
+    background-color: #f365b8;
+  }
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  .container input:checked ~ .checkmark:after {
+    display: block;
+  }
+  .container .checkmark:after {
+    top: 9px;
+   left: 9px;
+   width: 8px;
+   height: 8px;
+   border-radius: 50%;
+   background: white;
+}
+  
+.container1 {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  .container1 input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  .checkmark1 {
+    position: absolute;
+    left: 31em;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+  }
+  .container1:hover input ~ .checkmark1 {
+    background-color: #ccc;
+  }
+  .container1 input:checked ~ .checkmark1 {
+    background-color: #f365b8;
+  }
+    .checkmark1:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  .container1 input:checked ~ .checkmark1:after {
+    display: block;
+  }
+  .container1 .checkmark1:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+  .info {
+  font-family: Rubik;
+  font-weight: 900;     
+  }
+  .textarea  {
+        font-size: 16px;
+        font-family: inherit;
+        margin-bottom: 1em;
+        background-color: #fff;
+        border: 2px solid var(--input-border);
+        border-radius: 4px;
+      }
+.submitbtn {
+    font-size: 16px;
+    background-color: #f365b8;
+    color: white;
+    padding: 10px;
+    border-radius: 40px;
+    padding: 15px 32px;
+    margin-bottom: 2%;
+    margin-top: 2%;
+}
+   .submitbtn:hover {
+    background-color: #f0018c ; 
+    cursor: pointer;
+   }
+   ::-webkit-input-placeholder {
+       font-size: 0.8em;
+   }
+   footer {
+    font-weight: 300;
+      display: flex;
+      justify-content: space-evenly;
+      padding: 2rem;
+      background: #303841;
+      border-top: 4px solid #f0018c;
+      margin: -1em;
+  }
+  footer > p {
+  text-decoration: none;  
+    margin: 2rem;
+    color: white;
+    font-size: 1.5rem;
+  }
+  footer a {
+    color: white;
+  }
